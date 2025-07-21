@@ -1,0 +1,12 @@
+@tailwind utilities;
+
+:root {
+  --primaryGreen: #00ff38;
+  --grey: #757f77;
+  --contentColor: #f1f0fc;
+  --secondaryGreen: #b0ffc1;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
