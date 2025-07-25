@@ -1,5 +1,5 @@
+import Navbar from "../components/Navbar"
 import Background from "../assets/BG.png"
-import Logo from "../assets/Doyenify_Logo-removebg-preview.png"
 import CuriousMan from "../assets/CuroiusMan.png"
 import MindMan from "../assets/MindMan.png"
 import Togetherness from "../assets/Togetherness.png"
@@ -10,18 +10,8 @@ export default function Header() {
             className="w-full h-screen bg-cover bg-center"
             style={{ backgroundImage: `url(${Background})` }}
         >   
-            {/* Navbar */}
-            <nav className="flex justify-around p-6 text-white  w-full">
-                <img src={Logo} className="w-32 h-8" alt="Doyenify"></img>
-                <ul className="flex gap-8 text-white justify-center">
-                    <li>Our Work</li>
-                    <li>About Us</li>
-                    <li>What We Do</li>
-                    <li>Our Team</li>
-                </ul>
-                <button className="bg-[var(--primary)] text-black font-bold px-8 rounded-full">Contact Us</button>
-            </nav>
-
+            
+            <Navbar />
             {/* Centered Heading */}
             <div className="flex flex-col gap-9 justify-center m-20">
                 <h1 className="text-[var(--primaryGreen)] text-xl md:text-2xl font-bold text-center">
@@ -31,7 +21,7 @@ export default function Header() {
                 <button className="bg-[var(--grey)] text-white w-50 self-center justify-center items-center py-2 font-bold border-2 border-white rounded-full">View Our Work</button>
             </div>
 
-            <div className="flex justify-center gap-8">
+            <div className="md:flex justify-center gap-8">
                 <div className="flex gap-3 justify-center items-center bg-white w-50 h-23">
                     <img src={CuriousMan} className="w-12 h-15" alt="Curious Man" />
                     <p className="font-medium text-2xl">30k<br></br>
